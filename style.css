@@ -1,3 +1,81 @@
 body{
     background-color: rgb(247, 253, 253);
+    display:flex;
+    justify-content: center;
+}
+h1{
+   margin-bottom: 60px;
+}
+.calcCase{
+     /* background-color: rgb(189, 192, 192); */
+    height: 500px;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* overflow: visible; */
+}
+ button{
+    border-radius: 35px;
+    font-size: 25px;
+} 
+
+.buttonSection{
+    /* border: 2px solid red; */
+    height: 300px;
+    width: 340px;
+    display: flex;
+    flex-direction: row;
+}
+.numbers{
+    width: 50%;
+}
+.numbers button {
+    width: calc(100% / 2.05);
+    height: calc(100% / 5);
+    border: 1px solid greenyellow;
+}
+.numbers button:hover{
+    background-color: palegreen;
+}
+.operators{
+    width: 50%;
+}
+.operators button {
+    width: calc(100% / 2.05);
+    height: calc(100% / 4);
+    border: 1px solid steelblue;
+}
+.operators button:hover{
+    background-color: palegoldenrod;
+}
+
+.calcScreen{
+    display: block;
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+    /* flex-direction: row-reverse; */
+    border: 2px solid salmon;
+    height: 70px;
+    width: 250px;
+    padding: 2px;
+    white-space: nowrap;
+    margin: 5px 2px;
+    align-self: flex-end;
+    font-size: 27px;
+    /* flex: 0 0 auto; */
+    overflow-x: auto;
+    overflow-y: hidden;
+   text-align: right;
+   line-height: 80px; /* to make thr numbers appear at the bottom right*/
+   direction: rtl;
+}
+.calcContent {
+  direction: ltr;             /* keep numbers left→right */
+  text-align: right;          /* digits stick to the right edge */
+  min-width: max-content;     /* allow growth beyond container */
+  flex: 0 0 auto;
 }
